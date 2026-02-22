@@ -1,0 +1,8 @@
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.csproj.AssemblyReference.cache
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.AssemblyInfoInputs.cache
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.AssemblyInfo.cs
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.csproj.CoreCompileInputs.cache
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.MvcApplicationPartsAssemblyInfo.cs
+D:\Felix\Freelance\SaasApplication\SaasApplication\obj\Debug\net9.0\SaasApplication.MvcApplicationPartsAssemblyInfo.cache

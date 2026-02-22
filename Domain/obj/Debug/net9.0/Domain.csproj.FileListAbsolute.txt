@@ -1,0 +1,12 @@
+D:\Felix\Freelance\SaasApplication\Domain\bin\Debug\net9.0\Domain.deps.json
+D:\Felix\Freelance\SaasApplication\Domain\bin\Debug\net9.0\Domain.dll
+D:\Felix\Freelance\SaasApplication\Domain\bin\Debug\net9.0\Domain.pdb
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.dll
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\refint\Domain.dll
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.pdb
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\ref\Domain.dll
+D:\Felix\Freelance\SaasApplication\Domain\obj\Debug\net9.0\Domain.sourcelink.json
