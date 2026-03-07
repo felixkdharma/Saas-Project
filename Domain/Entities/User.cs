@@ -15,10 +15,11 @@ namespace Domain.Entities
         public string CPASSWORD { get; private set; } = string.Empty;
         public UserRole CUSER_ROLE { get; private set; }
 
-        public User(string pcName, string pcEmail, string pcPassword, UserRole pcRole)
+        public User(Guid pcGuid, string pcEmail, string pcPassword, UserRole pcRole)
         { 
             CUSER_ID = Guid.NewGuid();
-            CUSER_NAME = pcName;
+            //CUSER_NAME = pcName;
+            CEMAIL = pcEmail;
             CPASSWORD = pcPassword;
             CUSER_ROLE = pcRole;
         }

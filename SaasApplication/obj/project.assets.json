@@ -34,17 +34,17 @@
           }
         }
       },
-      "Appliaction/1.0.0": {
+      "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Appliaction.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Appliaction.dll": {}
+          "bin/placeholder/Application.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -91,10 +91,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Appliaction/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../Appliaction/Appliaction.csproj",
-      "msbuildProject": "../Appliaction/Appliaction.csproj"
+      "path": "../Appliaction/Application.csproj",
+      "msbuildProject": "../Appliaction/Application.csproj"
     },
     "Domain/1.0.0": {
       "type": "project",
@@ -104,7 +104,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Appliaction >= 1.0.0",
+      "Application >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.13"
     ]
   },
@@ -133,18 +133,15 @@
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/v3/index.json": {},
-        "https://www1.realta.net/realtanuget/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Appliaction.csproj": {
-              "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Appliaction.csproj"
+            "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj": {
+              "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj"
             }
           }
         }
@@ -192,13 +189,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://nuget.telerik.com/v3/index.json."
-    }
-  ]
+  }
 }

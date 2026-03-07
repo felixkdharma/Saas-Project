@@ -33,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Appliaction.csproj",
-      "projectName": "Appliaction",
-      "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Appliaction.csproj",
+      "projectUniqueName": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj",
+      "projectName": "Application",
+      "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj",
       "packagesPath": "C:\\Users\\felix.kurniawan\\.nuget\\packages\\",
       "outputPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\obj\\",
       "projectStyle": "PackageReference",
@@ -51,11 +51,8 @@
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/v3/index.json": {},
-        "https://www1.realta.net/realtanuget/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
