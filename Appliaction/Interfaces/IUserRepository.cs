@@ -10,6 +10,6 @@ namespace Application.Interfaces
     public interface IUserRepository
     {
         Task AddAsync (User poUser);
-        Task<User?> GetUserByIdAsync(Guid pcUserId);
+        Task<User?> GetUserByEmailAsync(string pcEmail);
     }
 }

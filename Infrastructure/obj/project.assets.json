@@ -1593,6 +1593,19 @@
           }
         }
       },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4681,6 +4694,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Appliaction/Application.csproj",
+      "msbuildProject": "../Appliaction/Application.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -4689,6 +4707,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Application >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.13",
@@ -4727,6 +4746,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj": {
+              "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj"
+            },
             "D:\\Felix\\Freelance\\SaasApplication\\Domain\\Domain.csproj": {
               "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Domain\\Domain.csproj"
             }
