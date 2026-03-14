@@ -17,5 +17,12 @@ namespace Infrastructure.Persistence
         { 
         
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Tenant>().HasKey(t => t.CTENANT_ID);
+
+            modelBuilder.Entity<User>().HasKey(t => t.CUSER_ID);
+        }
     }
 }

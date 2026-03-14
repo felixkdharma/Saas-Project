@@ -14,6 +14,7 @@ namespace Domain.Entities
         public SubscriptionPlan CSUBSCRIPTION_PLAN { get; private set; }
         public DateTime? DCREATED_DATE { get; set; }
 
+        private Tenant() { }
         public Tenant(string pcName, SubscriptionPlan pcPlan)
         { 
             CTENANT_ID = Guid.NewGuid();

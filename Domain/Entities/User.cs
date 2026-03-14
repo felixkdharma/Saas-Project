@@ -15,6 +15,7 @@ namespace Domain.Entities
         public string CPASSWORD { get; private set; } = string.Empty;
         public UserRole CUSER_ROLE { get; private set; }
 
+        private User() { }
         public User(Guid pcGuid, string pcEmail, string pcPassword, UserRole pcRole)
         { 
             CUSER_ID = Guid.NewGuid();

@@ -14,3 +14,19 @@ D:\Felix\Freelance\SaasApplication\Appliaction\obj\Debug\net9.0\Application.dll
 D:\Felix\Freelance\SaasApplication\Appliaction\obj\Debug\net9.0\refint\Application.dll
 D:\Felix\Freelance\SaasApplication\Appliaction\obj\Debug\net9.0\Application.pdb
 D:\Felix\Freelance\SaasApplication\Appliaction\obj\Debug\net9.0\ref\Application.dll
+D:\Felix\Saas Application\Saas-Project\Appliaction\bin\Debug\net9.0\Application.deps.json
+D:\Felix\Saas Application\Saas-Project\Appliaction\bin\Debug\net9.0\Application.dll
+D:\Felix\Saas Application\Saas-Project\Appliaction\bin\Debug\net9.0\Application.pdb
+D:\Felix\Saas Application\Saas-Project\Appliaction\bin\Debug\net9.0\Domain.dll
+D:\Felix\Saas Application\Saas-Project\Appliaction\bin\Debug\net9.0\Domain.pdb
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.csproj.AssemblyReference.cache
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.AssemblyInfoInputs.cache
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.AssemblyInfo.cs
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.csproj.CoreCompileInputs.cache
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.sourcelink.json
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Applicat.44B5EDA2.Up2Date
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.dll
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\refint\Application.dll
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\Application.pdb
+D:\Felix\Saas Application\Saas-Project\Appliaction\obj\Debug\net9.0\ref\Application.dll
