@@ -1737,6 +1737,7 @@
         "dependencies": {
           "Application": "1.0.0",
           "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
         },
         "compile": {
@@ -5234,23 +5235,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\felix\\.nuget\\packages\\": {},
+    "C:\\Users\\felix.kurniawan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Felix\\Saas Application\\Saas-Project\\SaasApplication\\SaasApplication.csproj",
+      "projectUniqueName": "D:\\Felix\\Freelance\\SaasApplication\\SaasApplication\\SaasApplication.csproj",
       "projectName": "SaasApplication",
-      "projectPath": "D:\\Felix\\Saas Application\\Saas-Project\\SaasApplication\\SaasApplication.csproj",
-      "packagesPath": "C:\\Users\\felix\\.nuget\\packages\\",
-      "outputPath": "D:\\Felix\\Saas Application\\Saas-Project\\SaasApplication\\obj\\",
+      "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\SaasApplication\\SaasApplication.csproj",
+      "packagesPath": "C:\\Users\\felix.kurniawan\\.nuget\\packages\\",
+      "outputPath": "D:\\Felix\\Freelance\\SaasApplication\\SaasApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\felix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\felix.kurniawan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5258,18 +5259,18 @@
         "net9.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Felix\\Saas Application\\Saas-Project\\Appliaction\\Application.csproj": {
-              "projectPath": "D:\\Felix\\Saas Application\\Saas-Project\\Appliaction\\Application.csproj"
+            "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj": {
+              "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj"
             },
-            "D:\\Felix\\Saas Application\\Saas-Project\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Felix\\Saas Application\\Saas-Project\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Felix\\Freelance\\SaasApplication\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Felix\\Freelance\\SaasApplication\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -5284,7 +5285,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -5330,6 +5331,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.14, 9.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[9.0.14, 9.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.14, 9.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.14, 9.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5338,7 +5357,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

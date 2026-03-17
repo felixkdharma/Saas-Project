@@ -18,6 +18,7 @@ namespace Infrastructure.Persistence
         
         }
 
+        // For primary key
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tenant>().HasKey(t => t.CTENANT_ID);

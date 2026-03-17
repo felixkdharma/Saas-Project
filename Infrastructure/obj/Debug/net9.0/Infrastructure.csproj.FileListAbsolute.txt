@@ -32,3 +32,7 @@ D:\Felix\Saas Application\Saas-Project\Infrastructure\obj\Debug\net9.0\Infrastru
 D:\Felix\Saas Application\Saas-Project\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
 D:\Felix\Saas Application\Saas-Project\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
 D:\Felix\Saas Application\Saas-Project\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
+D:\Felix\Freelance\SaasApplication\Infrastructure\bin\Debug\net9.0\Application.dll
+D:\Felix\Freelance\SaasApplication\Infrastructure\bin\Debug\net9.0\Application.pdb
+D:\Felix\Freelance\SaasApplication\Infrastructure\bin\Debug\net9.0\Infrastructure.runtimeconfig.json
+D:\Felix\Freelance\SaasApplication\Infrastructure\obj\Debug\net9.0\Infrastructure.genruntimeconfig.cache

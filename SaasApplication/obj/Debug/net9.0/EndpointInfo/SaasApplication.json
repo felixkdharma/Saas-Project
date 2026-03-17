@@ -36,6 +36,37 @@
         }
       }
     },
+    "/api/user/register": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterUserRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterUserRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterUserRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -91,7 +122,36 @@
         },
         "additionalProperties": false
       },
+      "RegisterUserRequest": {
+        "type": "object",
+        "properties": {
+          "ctenanT_ID": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cemail": {
+            "type": "string",
+            "nullable": true
+          },
+          "cpassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "crole": {
+            "$ref": "#/components/schemas/UserRole"
+          }
+        },
+        "additionalProperties": false
+      },
       "SubscriptionPlan": {
+        "enum": [
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "UserRole": {
         "enum": [
           1,
           2
