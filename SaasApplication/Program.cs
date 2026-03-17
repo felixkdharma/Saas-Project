@@ -1,5 +1,6 @@
 using Application.Interfaces;
 using Application.UseCases;
+using Infrastructure;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models; // Add this using directive
@@ -21,6 +22,7 @@ builder.Services.AddSwaggerGen(); // This will now resolve
 // Register repository
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITenantRepository, TenantRepository>();
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
 // Register Generate JWT Token Service
 builder.Services.AddScoped<IJWTService, JwtService>();

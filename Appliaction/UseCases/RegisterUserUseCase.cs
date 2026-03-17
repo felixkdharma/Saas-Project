@@ -13,11 +13,13 @@ namespace Application.UseCases
     {
         private readonly IUserRepository _userRepository;
         private readonly ITenantRepository _tenantRepository;
+        private readonly IPasswordHasher _passwordHasher;
 
-        public RegisterUserUseCase(IUserRepository userRepository, ITenantRepository tenantRepository)
+        public RegisterUserUseCase(IUserRepository userRepository, ITenantRepository tenantRepository, IPasswordHasher passwordHasher)
         {
             _userRepository = userRepository;
             _tenantRepository = tenantRepository;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<Guid> Execute(RegisterUserRequest request)
@@ -27,10 +29,12 @@ namespace Application.UseCases
             if (tenant == null)
                 throw new Exception("Tenant not found");
 
+            var lcHashedPassword = _passwordHasher.CHASH(request.CPASSWORD);    
+
             var user = new User(
                 request.CTENANT_ID,
                 request.CEMAIL,
-                request.CPASSWORD,
+                lcHashedPassword,
                 request.CROLE
                 );
 

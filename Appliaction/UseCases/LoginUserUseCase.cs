@@ -12,11 +12,12 @@ namespace Application.UseCases
     {
         private readonly IUserRepository _userRepository;
         private readonly IJWTService _jwtService;
-
-        public LoginUserUseCase(IUserRepository userRepository, IJWTService jwtService)
+        private readonly IPasswordHasher _passwordHasher;
+        public LoginUserUseCase(IUserRepository userRepository, IJWTService jwtService, IPasswordHasher passwordHasher)
         {
             _userRepository = userRepository;
             _jwtService = jwtService;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<LoginResponse> ExecuteAsync(LoginRequest request)
@@ -28,7 +29,7 @@ namespace Application.UseCases
                 throw new Exception("User Not Found");
             }
 
-            if (user.CPASSWORD != request.CPASSWORD)
+            if (!_passwordHasher.LVERIFY(request.CPASSWORD, user.CPASSWORD))
             {
                 throw new Exception("Invalid Password");
             }
