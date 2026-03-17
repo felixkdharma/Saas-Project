@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "SaasApplication.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/login/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SaasApplication.Controllers.Tenants.TenantController",
     "Method": "Register",
     "RelativePath": "api/tenant/register",

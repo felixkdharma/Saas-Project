@@ -21,11 +21,16 @@ builder.Services.AddSwaggerGen(); // This will now resolve
 // Register repository
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ITenantRepository, TenantRepository>();
+
+// Register Generate JWT Token Service
+builder.Services.AddScoped<IJWTService, JwtService>();
 builder.Services.AddControllers();
 
 // Register Use Case
 builder.Services.AddScoped<RegisterTenantUseCase>();
 builder.Services.AddScoped<RegisterUserUseCase>();
+builder.Services.AddScoped<LoginUserUseCase>();
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dbI83x3yb4M=",
+  "dgSpecHash": "ts/ezCMXnJQ=",
   "success": true,
-  "projectFilePath": "D:\\Felix\\Freelance\\SaasApplication\\Appliaction\\Application.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\felix.kurniawan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.14\\microsoft.windowsdesktop.app.ref.9.0.14.nupkg.sha512",
-    "C:\\Users\\felix.kurniawan\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
-    "C:\\Users\\felix.kurniawan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.14\\microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Felix\\Saas Application\\Saas-Project\\Appliaction\\Application.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
