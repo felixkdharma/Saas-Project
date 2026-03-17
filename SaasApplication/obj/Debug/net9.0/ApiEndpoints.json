@@ -16,6 +16,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SaasApplication.Controllers.Users.UserController",
+    "Method": "Register",
+    "RelativePath": "api/user/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.RegisterUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SaasApplication.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
