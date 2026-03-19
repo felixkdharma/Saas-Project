@@ -2,6 +2,7 @@
 using Application.UseCases;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace SaasApplication.Controllers
 {
@@ -28,6 +29,22 @@ namespace SaasApplication.Controllers
         public IActionResult TestAuth()
         {
             return Ok("Authenticated");
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("me")]
+        public IActionResult GetDataFromToken()
+        {
+            var userId = User.FindFirst("userId")?.Value;
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            return Ok(new
+            {
+                UserId = userId,
+                Email = email,
+                Role = role,
+            });
         }
     }
 }

@@ -17,6 +17,16 @@
   },
   {
     "ContainingType": "SaasApplication.Controllers.LoginController",
+    "Method": "GetDataFromToken",
+    "RelativePath": "api/login/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SaasApplication.Controllers.LoginController",
     "Method": "TestAuth",
     "RelativePath": "api/login/test-auth",
     "HttpMethod": "GET",

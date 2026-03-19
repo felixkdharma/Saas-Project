@@ -48,6 +48,18 @@
         }
       }
     },
+    "/api/login/me": {
+      "get": {
+        "tags": [
+          "Login"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/tenant/register": {
       "post": {
         "tags": [

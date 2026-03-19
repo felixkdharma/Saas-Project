@@ -19,8 +19,8 @@ namespace Infrastructure.Persistence
             var claims = new[]
             {
                 new Claim("userId", user.CUSER_ID.ToString()),
-                new Claim("email", user.CEMAIL.ToString()),
-                new Claim("role", user.CUSER_ROLE.ToString())
+                new Claim(ClaimTypes.Email, user.CEMAIL.ToString()),
+                new Claim(ClaimTypes.Role, user.CUSER_ROLE.ToString())
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
