@@ -1,5 +1,6 @@
 ﻿using Application.DTOs;
 using Application.UseCases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SaasApplication.Controllers
@@ -20,6 +21,13 @@ namespace SaasApplication.Controllers
         { 
             var result = await _loginUserUseCase.ExecuteAsync(request);
             return Ok(result);
+        }
+
+        [Authorize]
+        [HttpGet("test-auth")]
+        public IActionResult TestAuth()
+        {
+            return Ok("Authenticated");
         }
     }
 }

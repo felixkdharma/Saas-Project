@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SaasApplication.Controllers.LoginController",
+    "Method": "TestAuth",
+    "RelativePath": "api/login/test-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SaasApplication.Controllers.Tenants.TenantController",
     "Method": "Register",
     "RelativePath": "api/tenant/register",

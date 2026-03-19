@@ -5,6 +5,9 @@ using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models; // Add this using directive
 using Swashbuckle.AspNetCore.SwaggerGen; // Add this using directive
+using Microsoft.IdentityModel.Tokens; // Add this using directive
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +29,19 @@ builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 
 // Register Generate JWT Token Service
 builder.Services.AddScoped<IJWTService, JwtService>();
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer("Bearer", options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes("THIS_IS_SUPER_DUPER_SECRET_KEY_123456"))
+        };
+    });
 builder.Services.AddControllers();
 
 // Register Use Case
@@ -47,7 +63,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
