@@ -68,6 +68,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SaasApplication.Controllers.Users.UserController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/user/update-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.UpdatePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SaasApplication.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

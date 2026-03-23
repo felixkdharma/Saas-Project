@@ -37,5 +37,10 @@ namespace Domain.Entities
             }
         }
 
+        public void UpdatePassword(string pcNewPassword)
+        { 
+            CPASSWORD = pcNewPassword;
+        }
+
     }
 }

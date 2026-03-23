@@ -48,6 +48,7 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<RegisterTenantUseCase>();
 builder.Services.AddScoped<RegisterUserUseCase>();
 builder.Services.AddScoped<LoginUserUseCase>();
+builder.Services.AddScoped<UpdateUserPasswordUseCase>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();

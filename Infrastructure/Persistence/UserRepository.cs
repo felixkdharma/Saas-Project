@@ -28,5 +28,11 @@ namespace Infrastructure.Persistence
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.CEMAIL == pcEmail);
         }
+
+        public async Task UpdateAsync(User poUser)
+        {
+            _context.Users.Update(poUser);
+            await _context.SaveChangesAsync();
+        }
     }
 }

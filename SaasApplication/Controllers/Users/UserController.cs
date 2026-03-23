@@ -1,5 +1,6 @@
 ﻿using Application.DTOs;
 using Application.UseCases;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SaasApplication.Controllers.Users
@@ -9,10 +10,12 @@ namespace SaasApplication.Controllers.Users
     public class UserController : Controller
     {
         private readonly RegisterUserUseCase _registerUserUseCase;
+        private readonly UpdateUserPasswordUseCase _updateUserPasswordUseCase;
 
-        public UserController(RegisterUserUseCase registerUserUseCase)
+        public UserController(RegisterUserUseCase registerUserUseCase, UpdateUserPasswordUseCase updatePasswordUseCase)
         {
             _registerUserUseCase = registerUserUseCase;
+            _updateUserPasswordUseCase = updatePasswordUseCase;
         }
 
         [HttpPost("register")]
@@ -22,5 +25,17 @@ namespace SaasApplication.Controllers.Users
 
             return Ok(new { UserId = userId });
         }
+
+        //[Authorize]
+        [HttpPost("update-password")]
+        public async Task<IActionResult> UpdatePassword(UpdatePasswordRequest request)
+        {
+            var userId = Guid.Parse(User.FindFirst("userId")!.Value);
+
+            await _updateUserPasswordUseCase.ExecuteAsync(request);
+
+            return Ok("Password updated successfully");
+        }
+
     }
 }

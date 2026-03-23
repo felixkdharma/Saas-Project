@@ -122,6 +122,37 @@
         }
       }
     },
+    "/api/user/update-password": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePasswordRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePasswordRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePasswordRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -219,6 +250,28 @@
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "UpdatePasswordRequest": {
+        "type": "object",
+        "properties": {
+          "cemail": {
+            "type": "string",
+            "nullable": true
+          },
+          "ccurrenT_PASSWORD": {
+            "type": "string",
+            "nullable": true
+          },
+          "cneW_PASSWORD": {
+            "type": "string",
+            "nullable": true
+          },
+          "cconfirM_NEW_PASSWORD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "UserRole": {
         "enum": [
